@@ -16,7 +16,7 @@ Debe poseer un entorno de desarrollo correctamente configurado con spring y un g
 
 ### Instalación 🔧
 
-_Clonar el repositorio _
+_Clonar el repositorio_  
 
 ```
 $ git clone https://github.com/Raul-Larena/API-EstacionesMeteorologicas
@@ -37,9 +37,9 @@ _Una vez chequeado todo lo anterior, ya puede correr la api en su entrono de des
 
 _Ejecutando las pruebas en cada endpoint_
 
-_Lo primero que debe hacer es registrarse en la api, ya sea usuario o estación _
+_Lo primero que debe hacer es registrarse en la api, ya sea usuario o estación_
 
-_En la petición POST deben enviar su nombre de usuario y contraseña . El método createUser se encarga de codificar la contraseña y luego guardar los datos en la base de datos._
+_En la petición POST deben enviar su nombre de usuario y contraseña  en el body de la peticion.El método createUser se encarga de codificar la contraseña y luego guardar los datos en la base de datos. Este paso es sumamente importe, de lo contrario se le será denegado el acceso a cualquier endpoint por no estar autorizado.__
 _Este paso es sumamente importe, de lo contrario se le será denegado el acceso a cualquier endpoint por no estar autorizado_
 
 ```
@@ -51,7 +51,7 @@ localhost:8080/user
 
 
 _Para crear una estación nueva debe realizar una petición POST y  enviar por parámetros el nombre , coordenadas y  un valor booleano si tiene o no panel solar _
-_El método create se encarga de utilizar el servicio para guardar la nueva estación en la base de datos._
+_El método create se encarga de utilizar el servicio para guardar la nueva estación en la base de datos.__
 _Debe recordar enviar sus credenciales correctamente, de lo contrario su acceso será denegado._
 ```
 Tipo de peticion: POST
