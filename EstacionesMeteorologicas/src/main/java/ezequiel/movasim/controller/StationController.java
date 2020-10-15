@@ -1,4 +1,4 @@
-package ezequiel.movasim.controller;
+    package ezequiel.movasim.controller;
 
 import ezequiel.movasim.model.Station;
 import ezequiel.movasim.service.StationService;
